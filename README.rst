@@ -1,16 +1,15 @@
-Pydenticon
-==========
+# Identicon generator using python
+```
+$ ./identicon.py -h
 
-Pydenticon is a small utility library that can be used for deterministically
-generating identicons based on the hash of provided data.
+usage: identicon.py [-h] [-s SIZE [SIZE ...]] -i INP [-o OUT]
 
-The implementation is a port of the Sigil identicon implementation from:
+Generate an identicon
 
-* https://github.com/cupcake/sigil/
-
-Pydenticon provides a couple of extensions of its own when compared to the
-original Sigil implementation, like:
-
-* Ability to supply custom digest algorithms (allowing for larger identicons if
-  digest provides enough entropy).
-* Ability to specify a rectangle for identicon size..
+optional arguments:
+  -h, --help            show this help message and exit
+  -s SIZE [SIZE ...], --size SIZE [SIZE ...]
+                        Size of the identicon. Default 10 10
+  -i INP, --inp INP     Input string to hash
+  -o OUT, --out OUT     Input string to hash. Default: identicon.png
+```
