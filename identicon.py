@@ -9,8 +9,8 @@ import pydenticon
 import argparse
 
 parser = argparse.ArgumentParser(description='Generate an identicon')
-parser.add_argument('-s', '--size', type=int, nargs='+', default=[5, 5],
-		    help='Size of the identicon. Default 5 5')
+parser.add_argument('-s', '--size', type=int, nargs='+', default=[10, 10],
+		    help='Size of the identicon. Default 10 10')
 parser.add_argument('-i', '--inp', type=str, required=True,
 		    help='Input string to hash')
 parser.add_argument('-o', '--out', type=str, default='identicon.png',
